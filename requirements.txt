@@ -1,0 +1,4 @@
+Django==1.9.5
+django-concurrency==1.2
+six==1.10.0
+wheel==0.24.0
