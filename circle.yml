@@ -2,7 +2,7 @@ machine:
   python:
     version: 2.7.10
   environment:
-    DJANGO_SETTINGS_MODULE: payment_system.settings
+    DJANGO_SETTINGS_MODULE: payment_system.settings 
 database:
   override:
       - docker run --name postgres95 -e POSTGRES_PASSWORD=password -d postgres:9.5; sleep 10
