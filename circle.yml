@@ -9,6 +9,10 @@ machine:
     override:
       - createuser -s -d admin
       - createdb admin
+  dependencies:
+    post:
+      - rm -r ~/.gradle
+
 #dependencies:
 #  pre:
 #    - sudo apt-get install -y build-essential python-dev; sudo apt-get install -y python-psycopg2; sudo apt-get install -y libpq-dev; sudo apt-get install -y libjpeg-dev; easy_install -U setuptools
